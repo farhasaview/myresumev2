@@ -75,14 +75,16 @@
                 if ($explode[1] == 'nonaktif'){echo null;}else{?>
             <div class="row mt-3">
                 <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                    <div class="col-sm-8"><a href="javascript:void(0)" onclick="location.href='mailto:<?=$content['bi_email']?>'" rel="tooltip" title="Click to send me an email"><?=$content['bi_email']?></a></div>
+                    <div class="col-sm-8"><?=$content['bi_email']?></div>
+                    <!--<div class="col-sm-8"><a href="javascript:void(0)" onclick="location.href='mailto:<?=$content['bi_email']?>'" rel="tooltip" title="Click to send me an email"><?=$content['bi_email']?></a></div>-->
             </div>
             <?php } ?>
             <?php $explode = explode("_", $content['bi_phone']);
                 if ($explode[1] == 'nonaktif'){echo null;}else{?>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-              <div  class="col-sm-8"><a href="javascript:void(0)" onclick="location.href='tel:+<?=$content['bi_phone']?>'" rel="tooltip" title="Click to call me, text me or WhatsApp me by your smartphone cause this number also my WhatsApp number">+<?=$content['bi_phone']?></a></div>
+              <div  class="col-sm-8">+<?=$content['bi_phone']?></div>
+              <!--<div  class="col-sm-8"><a href="javascript:void(0)" onclick="location.href='tel:+<?=$content['bi_phone']?>'" rel="tooltip" title="Click to call me, text me or WhatsApp me by your smartphone cause this number also my WhatsApp number">+<?=$content['bi_phone']?></a></div>-->
             </div>
             <?php } ?>
 
@@ -372,7 +374,8 @@
         <div class="row">
           <div class="col-md-9">
             <div class="card mb-0" data-aos="zoom-in">
-              <div class="h4 text-center title">Contact Me</div>
+              <!-- <div class="h4 text-center title">Contact Me</div> -->
+              <div class="h4 text-center title">Come in please</div>
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
@@ -418,18 +421,18 @@
                   <div class="card-body">
                   
                     <p class="mb-0"><strong>Address </strong></p>
-                    <p class="pb-2"><a href="javascript:void(0)" onclick="window.open('<?=$content['bi_address_map']?>');" rel="tooltip" title="Click to find me on google maps"><?=$content['bi_address']?></a></p>
+                    <p class="pb-2"><a href="javascript:void(0)" onclick="window.open('<?=$content['bi_address_map']?>');" rel="tooltip" title="Find me on google maps"><?=$content['bi_address']?></a></p>
 
                 <?php $explode = explode("_", $content['bi_phone']);
                 if ($explode[1] == 'nonaktif'){echo null;}else{?>
                     <p class="mb-0"><strong>WhatsApp</strong></p>
-                    <p class="pb-2"><a href="javascript:void(0)" onclick="window.open('https://api.whatsapp.com/send?phone=+<?=$content['bi_phone']?>&text=HiMyRes');" rel="tooltip" title="Click to WhatsApp me by your smartphone">+<?=$content['bi_phone']?></a></p>
+                    <p class="pb-2"><a href="javascript:void(0)" onclick="window.open('https://api.whatsapp.com/send?phone=+<?=$content['bi_phone']?>&text=HiMyRes');" rel="tooltip" title="Contact me or WhatsApp me">+<?=$content['bi_phone']?></a></p>
                 <?php }?>
 
                 <?php $explode = explode("_", $content['bi_email']);
                 if ($explode[1] == 'nonaktif'){echo null;}else{?>
                     <p class="mb-0"><strong>Email</strong></p>
-                    <p><a href="javascript:void(0)" onclick="location.href='mailto:<?=$content['bi_email']?>'" rel="tooltip" title="Click to send me an email"><?=$content['bi_email']?></a></p>
+                    <p><a href="javascript:void(0)" onclick="location.href='mailto:<?=$content['bi_email']?>'" rel="tooltip" title="Send me an email"><?=$content['bi_email']?></a></p>
                 <?php } ?>
                   </div>
                 </div>
