@@ -36,7 +36,7 @@ class Publik extends CI_Controller {
 				$data['allPortfolio'] = $this->ModelPublik->allPortfolio();
 				$data['allWorkExperience'] = $this->ModelPublik->allWorkExperience();
 				$data['allEducation'] = $this->ModelPublik->allEducation();
-				$this->load->view('publik/publik', $data);
+				$this->load->view('publik/template/body', $data);
 			}
 		}
 	}
