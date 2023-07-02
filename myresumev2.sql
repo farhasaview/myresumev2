@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Jul 2023 pada 15.05
+-- Waktu pembuatan: 02 Jul 2023 pada 15.13
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 5.6.39
 
@@ -89,7 +89,7 @@ CREATE TABLE `tbl_content` (
 --
 
 INSERT INTO `tbl_content` (`id_content`, `logo`, `img_bg_paralax`, `foto_profil`, `nama`, `profesi`, `file_cv`, `about`, `bi_tgl_lahir`, `bi_email`, `bi_phone`, `bi_address`, `bi_address_map`, `bi_language`, `img_bg_contact`) VALUES
-(1, '24-06-2020IMG1592973728.png', '30-03-2022ISI07-03-56.jpg', '30-03-2022ISI07-06-04.png', 'Febi Aris Rinaldi', 'Software Engineer', '30-06-2023CV19-54-41.pdf', 'Hello everyone!<br>My name is Febi Aris Rinaldi, my friends used to call me Febi, I am a Web Developer / Software Engineer, I was born and live in Jampang Sukabumi, a beautiful agricultural Regency in Sukabumi, I have two siblings, a sister, and a brother.</p>\r\n<p>I am a graduate of Informatics Engineering, Muhammadiyah University of Sukabumi. Graduated in 2018, with very satisfactory\r\n<p>I will always work hard to deliver the best results, because I usually look for the best way to do my job and I always try to make a positive impact on others.', '1996-02-19', 'rfebiaris@gmail.com_nonaktif', '6285718215867_nonaktif', 'Kp. Pasirmalang, RT 2 RW 1, Desa Gunung Sungging, Kecamatan Surade, Kabupaten Sukabumi, Provinsi Jawa Barat, Indonesia', 'https://goo.gl/maps/Sc6oz6MJLufaoarJ6', 'Indonesia', '30-03-2022ISI07-17-46.jpg');
+(1, '24-06-2020IMG1592973728.png', '30-03-2022ISI07-03-56.jpg', '30-03-2022ISI07-06-04.png', 'Febi Aris Rinaldi', 'Software Engineer', '02-07-2023CV20-11-58.pdf', 'Hello everyone!<br>My name is Febi Aris Rinaldi, my friends used to call me Febi, I am a Web Developer / Software Engineer, I was born and live in Jampang Sukabumi, a beautiful agricultural Regency in Sukabumi, I have two siblings, a sister, and a brother.</p>\r\n<p>I am a graduate of Informatics Engineering, Muhammadiyah University of Sukabumi. Graduated in 2018, with very satisfactory\r\n<p>I will always work hard to deliver the best results, because I usually look for the best way to do my job and I always try to make a positive impact on others.', '1996-02-19', 'rfebiaris@gmail.com_nonaktif', '6285718215867_nonaktif', 'Kp. Pasirmalang, RT 2 RW 1, Desa Gunung Sungging, Kecamatan Surade, Kabupaten Sukabumi, Provinsi Jawa Barat, Indonesia', 'https://goo.gl/maps/Sc6oz6MJLufaoarJ6', 'Indonesia', '30-03-2022ISI07-17-46.jpg');
 
 -- --------------------------------------------------------
 
