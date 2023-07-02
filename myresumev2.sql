@@ -39,7 +39,7 @@ CREATE TABLE `maintenance_mode` (
 --
 
 INSERT INTO `maintenance_mode` (`id_maintenance_mode`, `status`, `maintenance_message`) VALUES
-(1, 0, 'We apologize, we are currently in maintenance mode. We\'ll be back soon for you guys');
+(1, 0, 'I apologize, I am currently in maintenance mode. I will be back soon for you guys');
 
 -- --------------------------------------------------------
 
