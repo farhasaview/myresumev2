@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Jul 2023 pada 13.06
+-- Waktu pembuatan: 02 Jul 2023 pada 15.05
 -- Versi server: 10.1.37-MariaDB
 -- Versi PHP: 5.6.39
 
@@ -185,17 +185,19 @@ CREATE TABLE `tbl_skill` (
 
 INSERT INTO `tbl_skill` (`id_skill`, `nama_skill`, `persen_skill`) VALUES
 (1, 'html', '75'),
-(2, 'php', '85'),
+(2, 'php', '88'),
 (3, 'css', '75'),
 (4, 'ajax', '75'),
 (5, 'jquery', '75'),
 (6, 'codeigniter', '85'),
 (7, 'bootstrap', '75'),
-(8, 'mysql', '75'),
-(9, 'javascript', '75'),
-(10, 'oracle database', '70'),
-(11, 'photoshop', '60'),
-(12, 'ms. office', '60');
+(8, 'mysql', '80'),
+(9, 'javascript', '80'),
+(10, 'oracle database', '80'),
+(11, 'photoshop', '50'),
+(12, 'ms. office', '55'),
+(13, 'CentOS', '67'),
+(14, 'Ubuntu', '65');
 
 -- --------------------------------------------------------
 
@@ -312,7 +314,7 @@ ALTER TABLE `tbl_portfolio`
 -- AUTO_INCREMENT untuk tabel `tbl_skill`
 --
 ALTER TABLE `tbl_skill`
-  MODIFY `id_skill` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_skill` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_work_experience`
