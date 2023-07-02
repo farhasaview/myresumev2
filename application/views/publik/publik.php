@@ -498,7 +498,7 @@
       </div>
       <div class="h4 title text-center">Febi Aris Rinaldi</div>
       <div class="text-center text-muted">
-        <p>&copy; 2020 My Resume v2.1 by Febi Aris Rinaldi.<br>
+        <p>&copy; 2020 My Resume v2.1.1 by Febi Aris Rinaldi.<br>
         All rights reserved.</p>
       </div>
     </footer>
