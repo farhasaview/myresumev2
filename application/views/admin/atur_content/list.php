@@ -60,6 +60,16 @@
           <button onclick='previewImage("<?=base_url()?>penyimpanan_file/documents/<?=$isi['file_cv']?>","cv");' rel="tooltip" title="view" type="button" class="btn btn-outline-danger">
             <i class="fa fa-eye"></i></button>
         </td>
+        <td>
+            <?php
+            $explode = explode("_", $isi['file_cv']);
+            if ($explode[1] == 'nonaktif') {
+                $ubahNamaFileCvDiDatabase=$explode[0];?>
+            <a href="<?= base_url()?>admin/setAktif/file_cv/<?=$ubahNamaFileCvDiDatabase?>/<?=$isi['id_content']?>" type="button" rel="tooltip" title="aktifkan" class="btn btn-outline-primary btn-sm"><i class="fa fa-toggle-off" aria-hidden="true"></i></a>
+          <?php }else { ?>
+          <a href="<?= base_url()?>admin/setNonaktif/file_cv/<?=$isi['file_cv']?>/nonaktif/<?=$isi['id_content']?>" rel="tooltip" title="nonaktifkan" type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-toggle-on" aria-hidden="true"></i></a>
+          <?php } ?>
+        </td>
       </tr>
       <tr>
         <th>About</th>

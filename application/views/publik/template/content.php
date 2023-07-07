@@ -10,8 +10,8 @@
           <div class="h2 title"><a onclick="sayMyName('<?=$content['nama']?>');"><?=$content['nama']?></a></div>
           <p class="category text-white"><?=$content['profesi']?></p>
           <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Get in touch</a>
-          <?php if (!file_exists(FCPATH . './penyimpanan_file/documents/' . $content['file_cv'])): echo null;?>
-         <!-- <button type="button" id="dummyButton" class="btn btn-primary" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</button> -->
+          <?php if (!file_exists(FCPATH . './penyimpanan_file/documents/' . $content['file_cv'])): ?>
+         <button type="button" id="dummyButton" class="btn btn-primary" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</button>
           <?php else: ?>
           <a class="btn btn-primary" href="javascript:void(0)" onclick="location.href='<?=base_url()?>publik/downloadFile/<?=encrypt_url('documents')?>/<?=encrypt_url($content['file_cv'])?>'" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
           <?php endif; ?>
