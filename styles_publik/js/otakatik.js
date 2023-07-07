@@ -33,7 +33,8 @@ $("#dummyButton").click(function () {
         icon: "error",
         title: "Whoops!!",
         //text: "I apologize, file doesn't exist",
-        text: "I apologize, because the CV file does not exist or I have disabled it. Please contact me if you would like to request it",
+        //text: "I apologize, because the CV file does not exist or I have disabled it. Please contact me if you would like to request it",
+        text: "I apologize, because I have disabled my CV file. Please contact me if you would like to request it",
         width: 363,
         /* showConfirmButton: false,
         timer: 1300 */
