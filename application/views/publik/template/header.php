@@ -2,14 +2,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Febi Aris Rinaldi, febiaris.lovestoblog.com">
+    <meta name="keywords" content="<?=$content['nama']?>, <?=base_url()?>">
     <meta tag="">
-    <meta name="author" content="Febi Aris Rinaldi">
+    <meta name="author" content="<?=$content['nama']?>">
     <link rel="icon" href="<?=base_url()?>penyimpanan_file/favicon.ico" type="image/ico">
 	<?php $hilangkanKarakterBerikut = ['http', ':', '/']; ?>
 	<title><?=str_replace($hilangkanKarakterBerikut, "", base_url())?> by <?=$content['nama']?></title>
     <!-- <title>My Resume V2 by <?=$content['nama']?></title> -->
-    <meta name="description" content="Febi Aris Rinaldi, febiaris.lovestoblog.com is a website for Febi Aris Rinaldi's profile">
+    <meta name="description" content="<?=$content['nama']?>, <?=base_url()?> is a website for <?=$content['nama']?>'s profile">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?=base_url()?>styles_publik/css/aos.css">
