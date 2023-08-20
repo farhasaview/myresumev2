@@ -5,8 +5,10 @@
     <meta name="keywords" content="Febi Aris Rinaldi, febiaris.lovestoblog.com">
     <meta tag="">
     <meta name="author" content="Febi Aris Rinaldi">
-    <!-- <link rel="icon" href="<?=base_url()?>penyimpanan_file/favicon.ico" type="image/ico"> -->
-    <title>My Resume V2 by <?=$content['nama']?></title>
+    <link rel="icon" href="<?=base_url()?>penyimpanan_file/favicon.ico" type="image/ico">
+	<?php $hilangkanKarakterBerikut = ['http', ':', '/']; ?>
+	<title><?=str_replace($hilangkanKarakterBerikut, "", base_url())?> by <?=$content['nama']?></title>
+    <!-- <title>My Resume V2 by <?=$content['nama']?></title> -->
     <meta name="description" content="Febi Aris Rinaldi, febiaris.lovestoblog.com is a website for Febi Aris Rinaldi's profile">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
@@ -27,8 +29,8 @@
       <div class="profile-page sidebar-collapse">
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
           <div class="container">
-            <!-- <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Creative CV</a> -->
-            <div class="navbar-translate"><a class="navbar-brand" href="<?=base_url()?>" rel="tooltip" title="is my name"><img src='<?php echo base_url("penyimpanan_file/images/".$content['logo'])?>' alt=""></a>
+            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip"><?=$content['nama']?>'s profile</a>
+            <!-- <div class="navbar-translate"><a class="navbar-brand" href="<?=base_url()?>" rel="tooltip" title="is my name"><img src='<?php echo base_url("penyimpanan_file/images/".$content['logo'])?>' alt=""></a> -->
               <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">

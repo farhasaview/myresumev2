@@ -6,7 +6,10 @@
       </div>
       <div class="h4 title text-center"><a onclick="sayMyName('<?=$content['nama']?>');"><?=$content['nama']?></a></div>
       <div class="text-center text-muted">
-        <p>&copy; 2020 My Resume v2.1.2 by <a onclick="sayMyName('<?=$content['nama']?>');"><?=$content['nama']?></a>.<br>
+        <!-- <p>&copy; 2020 My Resume v2.1.2 by <a onclick="sayMyName('<?=$content['nama']?>');"><?=$content['nama']?></a>.<br>
+        All rights reserved.</p> -->
+		<?php $hilangkanKarakterBerikut = ['http', ':', '/']; ?>
+		<p>&copy; 2020 <?=str_replace($hilangkanKarakterBerikut, "", base_url())?> v2.1.2 by <a onclick="sayMyName('<?=$content['nama']?>');"><?=$content['nama']?></a>.<br>
         All rights reserved.</p>
       </div>
     </footer>
