@@ -1,7 +1,5 @@
 <div class="col-md-12">
-  
-  <!-- notifikasi tambah data -->
-  <?php if ($this->session->flashdata('pangbeja')) {echo $this->session->flashdata('pangbeja');}?>
+<?php if ($this->session->flashdata('pangbeja')) {echo $this->session->flashdata('pangbeja');}?>
 
   <table class="table table-bordered table-responsive bg-light">
     <tbody>

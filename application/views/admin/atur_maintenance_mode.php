@@ -1,8 +1,5 @@
 <div class="col-md-12">
-
-  <!-- notifikasi tambah data katalog tender -->
-        <?php if ($this->session->flashdata('pangbeja')) {echo $this->session->flashdata('pangbeja');}?>
-  <!-- end of notifikasi tambah data katalog tender -->
+<?php if ($this->session->flashdata('pangbeja')) {echo $this->session->flashdata('pangbeja');}?>
 
   <table class="table table-bordered table-striped table-responsive bg-light">
     <thead class="bg-success">
